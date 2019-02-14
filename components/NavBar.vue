@@ -2,7 +2,7 @@
     <nav class="nav">
       <div class="logo">
         <nuxt-link :to="{name: 'index'}" class="logo text-lg">
-          Navigation Bar
+          Home
         </nuxt-link>
 
         <span class="subheader">A Vue School Course</span>
