@@ -5,7 +5,7 @@
           Home
         </nuxt-link>
 
-        <span class="subheader">A Vue School Course</span>
+        <span class="subheader">Subheader </span>
       </div>
     </nav>
 </template>

@@ -21,9 +21,21 @@
 
 <script>
   export default {
+
+    // return post title in tab name
+    head() {
+      return {
+        title: this.post.title,
+        meta: [
+          {name: 'twitter.title', content: this.post.title},
+          {name: 'twitter.description', content: this.post.content}
+        ]
+      }
+    },
+
     data() {
       return {
-        id: this.$route.params.id,
+        id: this.$route.params.id
 
       }
     },
@@ -38,7 +50,7 @@
       },
 
       relatedPosts() {
-        return this.$store.state.posts.all.filter(post => post.id)
+        return this.$store.state.posts.all.filter(post => post.id !== this.id)
       }
     }
   }
